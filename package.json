@@ -1,0 +1,22 @@
+{
+  "name": "Starter monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "keywords": [],
+  "author": "contact@pierrecruz.com",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "husky": "^8.0.0",
+    "npm-check-updates": "^16.10.16",
+    "nx": "16.5.2",
+    "prettier": "^2.8.8"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "if [[ $NODE_ENVIRONMENT != \"production\" ]]; then husky install; fi"
+  }
+}
